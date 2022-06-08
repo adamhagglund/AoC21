@@ -8,7 +8,7 @@ public class Parser {
     public static String[] parseAllLinesAsString(String filename) {
         try {
             return Files
-                    .readAllLines(Paths.get("./src/input/" + filename + ".txt"))
+                    .readAllLines(Paths.get("./src/apinput/" + filename + ".txt"))
                     .toArray(String[]::new);
         } catch (IOException e) {
             e.printStackTrace();
