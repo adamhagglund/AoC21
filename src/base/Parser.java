@@ -19,7 +19,7 @@ public class Parser {
     public static int[] parseAllLinesAsInt(String filename) {
         try {
             return Files
-                    .readAllLines(Paths.get("./src/input/" + filename + ".txt"))
+                    .readAllLines(Paths.get("./src/apinput/" + filename + ".txt"))
                     .stream()
                     .mapToInt(Integer::parseInt)
                     .toArray();
